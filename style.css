@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+
+}
+.round{
+    width:200px;
+    height:200px;
+    background-color:green;
+    border-radius:50%;
+}
+.square{
+    width:200px;
+    height:200px;
+    background-color:yellow;
+    margin: 20px 0 20px 0;
+}
+#pi{
+    width:150px;
+    height:150px;
+    background-color:red;
+}
+#ze{
+    width:100px;
+    height:100px;
+    background-color:gray;
+}
+.styled p:hover{
+    background-color:rebeccapurple;
+    color: white;
+}

@@ -1,0 +1,35 @@
+header {
+    text-align: right;
+    background-color: paleturquoise;
+    padding: 15px;
+}
+.b1{
+    background: cornflowerblue;
+    font-size: 10pt;
+    height: 50px;
+    width: 80px;
+    color: white;
+}
+.text {
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    margin: 15px;
+    padding: 15px;
+}
+.footer{
+    background-color: paleturquoise;
+    text-align: left;
+    padding: 15px;
+}
+.b2{
+    color: blue;
+    background: white;
+    height: 30px;
+}
+.b3{
+    color: white;
+    background: brown;
+    height: 30px;
+    width: 100px;
+}
