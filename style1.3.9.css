@@ -1,0 +1,46 @@
+header {
+    background-color: #00818A;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.left-button{
+    height: 30px;
+    width: 80px;
+    background: #FD7013;
+    color: white;
+    border: 0px;
+    float: right;
+    margin: 10px;
+}
+.right-button{
+    height: 30px;
+    width: 80px;
+    background: #FD7013;
+    color: white;
+    border: 0px;
+    margin: 10px 0px 10px 10px;
+}
+/*
+*{
+    border: 2px solid red
+}
+*/
+
+.container{
+    display: flex;
+}
+
+.item1 {
+    background-color: #00818A;
+    padding: 20px 20px 0px 20px;
+    height: 40px;
+    width: 80%;
+  }
+.item {
+    background-color: #F9CE00;
+    width: 110px;
+    height: 40px;
+    padding: 20px 20px 0px 20px;
+
+}
