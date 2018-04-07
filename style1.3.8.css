@@ -1,0 +1,38 @@
+body{
+    background-image: url("space.jpg");
+}
+.sun{
+    width:200px;
+    height:200px;
+    background-color:#F9CE00;
+    border-radius:50%;
+    margin: 70px auto;
+}
+.orbit{
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    margin: 100px auto;
+    border: 2px solid #B9EDF8;
+    animation-name: mars;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+.mars{
+    width:80px;
+    height:80px;
+    background-color: #DE3C3C;
+    border-radius:50%;
+    margin-left: 75px;
+
+}
+@kayframes mars{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
