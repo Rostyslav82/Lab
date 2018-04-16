@@ -42,10 +42,12 @@ body{
 .mars:hover{
     background-color: #FF2E63;
     transform: scale(1.2);
-    transition-delay: 500ms;
+    transition-delay: 300ms;
+    transition: 1s ease-in;
 }
 .sun:hover{
     background-color:#FD7013;
     transform: scale(1.2);
-    transition-delay: 500ms;
+    transition-delay: 300ms;
+    transition: 1s ease-in;
 }

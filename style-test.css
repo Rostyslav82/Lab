@@ -1,0 +1,46 @@
+body {
+  background-color: #7a43b6;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+header {
+  background-color: #00cc00;
+  height: 50px;
+}
+section {
+  background-color: #007bff;
+  height: 300px;
+}
+footer {
+  background-color: #aa0000;
+  height: 200px;
+}
+.div {
+  background-color: #00ccff;
+  float: right;
+}
+nav {
+  float: right;
+  margin-top: 5px;
+}
+.menu {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.menu li {
+  float: left;
+  margin-right: 41px;
+  display: block;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.img {
+  width: 800px;
+  height: 200px;
+}
+/*# sourceMappingURL=style-test.css.map */

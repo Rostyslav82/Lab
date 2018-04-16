@@ -1,0 +1,103 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial sans-serif;
+  background-color: #7A57D1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100px;
+  clear: both;
+}
+div {
+  box-sizing: border-box;
+}
+header {
+  background: url("../img/foto1.png") no-repeat center top;
+  height: 450px;
+  margin-top: 80px;
+}
+h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 45px;
+  text-align: center;
+}
+.logo {
+  float: left;
+}
+.container {
+  width: 930px;
+  margin: 0px auto;
+  background-color: #7A57D1;
+}
+nav {
+  float: right;
+  margin-top: -25px;
+}
+.menu {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.menu li {
+  float: left;
+  margin-right: 41px;
+  display: block;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.title {
+  padding-top: 115px;
+}
+.title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.title p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.services {
+  margin-top: 60px;
+}
+.services_item {
+  width: 270px;
+  float: left;
+  text-align: center;
+  background-color: #7A57D1;
+}
+.services_item h3 {
+  font-size: 18px;
+}
+.services_item p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.55em;
+}
+.services_item:last-child {
+  float: right;
+}
+.services_item:nth-child(2) {
+  margin-left: 60px;
+}
+.img:hover {
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+  transition: 1s ease-in;
+}
+.animation:hover {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
