@@ -8,9 +8,12 @@ div{
   box-sizing: border-box;
 }
 header{
-  margin-top: 60px;
+  margin-top: 70px;
+  padding: 0;
   height: 570px;
-  background-color:@brand_color;
+  //background-color:@brand_color;
+  background: url("../img/back/5.jpg") no-repeat center top;
+  background-size: cover;
 }
 h1{
   text-transform: uppercase;
@@ -22,6 +25,7 @@ h1{
   width: 950px;
   margin: 0px auto;
 }
+/* new menu*/
 nav{
   float:right;
   margin-top: -25px;
@@ -42,6 +46,7 @@ nav{
     font-size: 16px;
   }
 }
+/* name sections*/
 .title{
   padding-top: 115px;
   h2{
@@ -59,6 +64,7 @@ nav{
     margin-top: 5px;
   }
 }
+/* block services*/
 .services{
   margin-top: 80px;
 }
@@ -90,6 +96,7 @@ nav{
 }
 .animation:hover {
   color: #5BE7C4;
+  text-decoration: underline;
 }
 .button{
   color:black;
@@ -103,13 +110,15 @@ nav{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  &:hover{
+    &:hover{
     color:white;
     background:@brand_color
   }
 }
+/* links menu*/
 #portfolio{
-  background: #f7f7f7;
+  background: url("../img/back/2.jpg") no-repeat center top;
+  background-size: cover;
   padding-bottom: 500px;
  }
 #services{
@@ -118,8 +127,9 @@ nav{
 .works img{
   float: left;
   width: 270px;
-  border: 4px solid @brand_color;
+  border: 4px solid white;
 }
+/* block portfolio*/
 .works img:nth-child(2){
   margin-left: 57px;
 }
@@ -132,10 +142,16 @@ nav{
 .logo{
   float:left;
   width: 50px;
-  margin-top: -48px;
+  margin-top: -50px;
 }
-.contacts img{
+.contacts img {
   float: right;
   margin-left: 30px;
   margin-bottom: 30px;
+}
+/* background for first block */
+.front{
+  width: 600px;
+  margin-left: 150px;
+  margin-top: 50px;
 }
