@@ -1,0 +1,160 @@
+//constants
+//menu
+@brand_color1:#777777;
+//header
+@brand_color2:#dcdcdc;
+//
+@brand_color3:#f8f8f8;
+//
+@circle_color1:#fae3d1;
+//blue bubble
+@circle_color2:#d1d4f3;
+//
+@circle_color3:#d5e2d1;
+//header-block
+.header-block{
+
+
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    background: @brand_color2;
+    height: 150px;
+    &_logo{
+      //flex-grow: 3;
+      width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      &_item{
+        width: 30%;
+        margin-top: 25px;
+        &_1{
+          background: @brand_color1;
+          height: 65px;
+          width: 65px;
+          float:right;
+          margin-top: 15px;
+        }
+        }
+    }
+      &_item{
+        width: 50%;
+      }
+}
+    &_tell{
+      //flex-grow: 5;
+      width: 200px;
+      p{
+        font-size: 20px;
+      }
+    }
+  &__nav{
+    background: @brand_color1;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    li{
+      display: inline-block;
+    }
+    ul{
+      margin: 0px;
+      padding: 12px;
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+}
+//section-block
+.section-block{
+  background: @brand_color3;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  &_circle1{
+  background:@circle_color1;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  &_circle2{
+    background:@circle_color1;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-top: 90px;
+  }
+  &_circle3{
+    background:@circle_color3;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+  }
+  &_circle4{
+    background:@circle_color2;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+  }
+}
+//main-block
+.main-block{
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  &__aside{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    &-1{
+      background: @brand_color2;
+      width: 300px;
+      height: 600px;
+      margin-left: 100px;
+      color:white;
+    }
+    &-2{
+      width: 400px;
+      height: 100px;
+    }
+  }
+  &__section{
+    flex-grow: 3;
+    width: 50%;
+  }
+}
+//footer-block
+.footer-block{
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  background: @brand_color2;
+  &__container{
+    flex-grow: 3;
+    width: 30%;
+  }
+}
+//animation menu
+.animation:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.company{
+  font-weight: bold;
+  font-size: 18px;
+  color:#787878;
+  margin-bottom: 0px;
+}
+.small_text {
+  font-size: 10px;
+  color: #787878;
+  margin-top: 5px;
+
+}

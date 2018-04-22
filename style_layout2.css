@@ -1,0 +1,136 @@
+.header-block__container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #dcdcdc;
+  height: 150px;
+}
+.header-block__container_logo {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-block__container_logo_item {
+  width: 30%;
+  margin-top: 25px;
+}
+.header-block__container_logo_item_1 {
+  background: #777777;
+  height: 65px;
+  width: 65px;
+  float: right;
+  margin-top: 15px;
+}
+.header-block__container_item {
+  width: 50%;
+}
+.header-block_tell {
+  width: 200px;
+}
+.header-block_tell p {
+  font-size: 20px;
+}
+.header-block__nav {
+  background: #777777;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+.header-block__nav li {
+  display: inline-block;
+}
+.header-block__nav ul {
+  margin: 0px;
+  padding: 12px;
+  list-style: none;
+}
+.header-block__nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+.section-block {
+  background: #f8f8f8;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-block_circle1 {
+  background: #fae3d1;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.section-block_circle2 {
+  background: #fae3d1;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin-top: 90px;
+}
+.section-block_circle3 {
+  background: #d5e2d1;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+}
+.section-block_circle4 {
+  background: #d1d4f3;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin-right: 20px;
+}
+.main-block {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-block__aside {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+.main-block__aside-1 {
+  background: #dcdcdc;
+  width: 300px;
+  height: 600px;
+  margin-left: 100px;
+  color: white;
+}
+.main-block__aside-2 {
+  width: 400px;
+  height: 100px;
+}
+.main-block__section {
+  flex-grow: 3;
+  width: 50%;
+}
+.footer-block {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  background: #dcdcdc;
+}
+.footer-block__container {
+  flex-grow: 3;
+  width: 30%;
+}
+.animation:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.company {
+  font-weight: bold;
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 0px;
+}
+.small_text {
+  font-size: 10px;
+  color: #787878;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=style_layout2.css.map */
