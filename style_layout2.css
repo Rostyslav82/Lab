@@ -33,10 +33,10 @@
   background: #777777;
   height: 60px;
   width: 100%;
-  text-align: center;
 }
 .header-block__nav li {
   display: inline-block;
+  float: right;
 }
 .header-block__nav ul {
   margin: 0px;

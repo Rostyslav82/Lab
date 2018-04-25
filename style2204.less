@@ -1,0 +1,125 @@
+@menu_color: white;
+@brand_color: #7A57D1;
+@front_color: #00ccff;
+body{
+  margin: 0px;
+  //background: @front_color;
+}
+.header-block {
+
+  &__container {
+    width: 100%;
+    height: 70px;
+    //background: @front_color;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background: black;
+    opacity: 0.9;
+
+  }
+  a {
+    color: @menu_color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  li {
+    display: inline-block;
+    padding: 0 6px;
+  }
+  ul {
+    margin-top: 25px;
+    padding-left: 0px;
+  }
+  .animation:hover {
+    color: @front_color;
+    //text-decoration: underline;
+    text-underline: #00ccff;
+  }
+  .logo {
+    height: 20px;
+    margin: 10px;
+  }
+}
+.section-block {
+  //padding: 0;
+  //height: 630px;
+  //width: 930px;
+  //margin: 0px auto;
+  //background: white;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    background: #6c757d;
+  }
+
+  &_module {
+   // background-color: white;
+    width: 250px;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 30px;
+    //line-height: 100px;
+    //font-size: 30px;
+  }
+}
+.button {
+  color: black;
+  border-radius: 4px;
+  display: block;
+  width: 150px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  &:hover {
+    color: white;
+    background: #00ccff;
+  }
+}
+.img:hover {
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  transform: scale(1.6);
+  transition: 1s ease-in;
+}
+h1 {
+  text-transform: uppercase;
+  color: #00ccff;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+h2{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  background: black;
+  color: white;
+}
+.front{
+  width: 600px;
+  margin-left: 480px;
+  margin-top: 80px;
+}
+h4 {
+  color: black;
+  text-align: center;
+}
+.find {
+  display: flex;
+  justify-content: center;
+}
+.newimg{
+border-radius:50%;
+}
