@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+<h1> Заголовок 1</h1>
+<lable>Math<input type="text" id="Math"></lable><br>
+<lable>History<input type="text" id="History"></lable><br>
+<lable>Chemistry<input type="text" id="Chemistry"></lable><br>
+<lable>Science<input type="text" id="Science"></lable><br>
+<lable>Biology<input type="text"id="Biology"></lable>
+<button></button>
+-->
+<!--
+<lable class="block">First name<input type="text" id="fName"> </lable>
+<lable class="block">Model name<input type="text" id="mName"> </lable>
+<lable class="block">Engine Displacement<input type="text" id="engine"> </lable>
+<button onclick="submitResult()">Submit Results</button>
+-->
+<style>
+    .ShowDiv{
+        display:none;
+    }
+</style>
+
+<div class="ShowDiv" id="ShowDiv">Текст</div>
+
+<script>
+    function ShowDiv() {
+        document.getElementById('ShowDiv').style.display='block';
+    }
+</script>
+
+<input type="submit" onclick="ShowDiv();" value ="Підтвердить"/>
+
+
+
+<script src="myjs.js"></script>
+</body>
+</html>

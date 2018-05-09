@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Carousel</title>
+    <link rel="stylesheet"href="menu.css">
+</head>
+<body>
+<div class="container-1">
+    <div class="container-1__header">
+        <h1>Photo Carousel</h1>
+    </div>
+</div>
+<div class="container-1">
+    <div class="switch">
+        <i class="arr-left" onclick="func6()"></i>
+    </div>
+    <div class="container-1__pic" id="pic-1" style="display: block">
+        <img class="c-img" src="https://images.unsplash.com/photo-1522198734915-76c764a8454d?ixlib=rb-0.3.5&s=7ea3f6b701fd72647125869532aeb049&auto=format&fit=crop&w=1050&q=80">
+    </div>
+    <div class="container-1__pic" id="pic-2">
+        <img class="c-img" src="https://images.unsplash.com/photo-1522198428577-adf2d374b05b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8c7a9980900ca8adf70b1d9ad7487a4&auto=format&fit=crop&w=1050&q=80">
+    </div>
+    <div class="container-1__pic" id="pic-3">
+        <img class="c-img" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=1050&q=80">
+    </div>
+    <div class="container-1__pic" id="pic-4">
+        <img class="c-img" src="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-0.3.5&s=a7ba2b97ad1e4f79b142c0f329821596&auto=format&fit=crop&w=1053&q=80">
+    </div>
+    <div class="switch">
+        <i class="arr-right" onclick="func5()"></i>
+    </div>
+</div>
+<div class="container-1">
+    <div class="container-1__menu">
+        <input id="butPic-1" class="but" type="button" value="Pic-1" onclick="func1()">
+        <input id="butPic-2" class="but" type="button" value="Pic-2" onclick="func2()">
+        <input id="butPic-3" class="but" type="button" value="Pic-3" onclick="func3()">
+        <input id="butPic-4" class="but" type="button" value="Pic-4" onclick="func4()">
+    </div>
+</div>
+<script src="menu.js"></script>
+<script src="test.js"></script>
+</body>
+</html>

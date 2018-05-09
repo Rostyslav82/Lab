@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@media (min-width: 500px) {
+  .container-1 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid red;
+  }
+}
+.container-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid red;
+}
+.container-1 div,
+.container-2 div {
+  padding: 10px;
+  border: 2px solid green;
+}
+.box {
+  flex-basis: 300px;
+}
+@media (min-width: 500px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.nav li {
+  padding-left: 15px;
+  border: 2px solid green;
+}
+.nav a {
+  text-transform: uppercase;
+}
+.list {
+  flex-basis: 10%;
+}
+.menu {
+  height: 20%;
+}
+/*# sourceMappingURL=style-test.css.map */
