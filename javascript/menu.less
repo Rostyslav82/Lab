@@ -1,11 +1,12 @@
 body{
   margin: 0px auto;
   padding: 0px auto;
+  height: 700px;
+  background: black;
 }
 .container-1{
   display: flex;
   justify-content: center;
-  background: black;
   &__menu{
   }
   &__pic{
@@ -14,33 +15,42 @@ body{
     }
   }
   .but{
-    width: 205px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 10px;
     border: 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 4px;
+    border-radius: 50%;
   }
 .c-img{
   width: 900px;
-  height: 500px;
+  height: 510px;
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
  .c-img{
    width: 450px;
    height: 250px;
  }
+  .but {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 300px){
+  .c-img{
+    width: 250px;
+    height: 150px;
+  }
 }
 h1{
   text-transform: uppercase;
   font-weight: bold;
   font-size: 35px;
-  color: white;
+  color: #FFFFF2;
+  span{
+    color: #50C1E9;
+  }
 }
 .switch{
-
   display: flex;
   align-items:center;
   justify-items: center;
@@ -57,16 +67,20 @@ h1{
 .arr-right {
   transform:rotate(-45deg);
   &:hover{
-    color: #007bff;
+    color: #50C1E9;
   }
 }
 .arr-left  {
   transform:rotate(135deg);width:6%;
   &:hover{
-    color: #007bff;
+    color: #50C1E9;
   }
 }
 .active{
   color: white;
-  background-color: #007bff;
+  background-color: #50C1E9;
+}
+.photos{
+  border: 5px solid #FFFFF2;
+  height: 510px;
 }
