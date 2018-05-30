@@ -7,7 +7,7 @@ function validate(form){
     var fail = false;
     var name = form.name.value;
     var mail = form.mail.value;
-    var tell =  form.tell.value;
+    var tell = form.tell.value;
         if(regName.test(name) == false) {
             fail = "Ви ввели не правильне імя";
         }else if (regMail.test(mail) == false){

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            color: #1F6ED4;
+            font-size:20px;
+        }
+        h1  {
+            color: #1F6ED4;
+            font-size:26px;
+            font-family:sans-serif;
+        }
+        lable {
+            font-size:18px;
+            font-weight:bold;
+        }
+        button {
+            cursor: pointer;
+            width: 120px;
+            height: 30px;
+            background: gainsboro;
+            color: #1F6ED4;
+            border: 1px solid #1F6ED4;
+            font-size:14px;
+            margin-left: 10px;
+        }
+        button:hover {
+            background: #1F6ED4;
+            color: white;
+            border: 0px;
+        }
+        .formButton {
+            background: #1F6ED4;
+            color: white;
+            font-size:15px;
+        }
+        .formButton:hover{
+            background: white;
+            color: #1F6ED4;
+            border: 1px solid #1F6ED4;
+        }
+        .modal {
+            position: absolute;
+            width: 280px;
+            margin-left: -150px;
+            left: 50%;
+            top: -100%;
+            padding: 20px;
+            background: white;
+            border: 0px;
+            z-index: 2;
+            transition: all 0.5s ease-in;
+        }
+        .overflow {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: #B9EDF8;
+            position: absolute;
+            top: 0;
+            opacity: 0.5;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: gainsboro;
+            height: 60px;
+        }
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <button onclick="openWin()">Registration</button>
+    <button onclick="getData()">User Data</button>
+</div>
+<div class="modal">
+    <h1>Реєстраційна форма:</h1>
+    <form>
+        <lable>Ваше ім'я:</lable><br><br>
+        <input name="name" id="name" required><br><br>
+        <lable>Ваша фамілія:</lable><br><br>
+        <input name="surname" id="s-name"><br><br>
+        <lable>Ваш e-mail:</lable><br><br>
+        <input name="mail" id="mail"><br><br>
+        <button class="formButton" onclick="validate()">Registration</button>
+    </form>
+</div>
+<div id="list">
+
+</div>
+<script type="text/javascript" src="study25-05.js"></script>
+</body>
+</html>

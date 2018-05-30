@@ -62,9 +62,7 @@ function dateOfBirth () {
 function experience (){
     var exp = document.getElementById("experience").value;
     exp = parseInt(exp);
-    if (exp < 0){
-        alert ("Помилка! Повторіть введення.");
-    } else if (exp >= 20){
+    if (exp >= 20){
         alert ("Надбавка за стаж - 25%");
     } else if (exp >=0 && exp < 3) {
         alert ("Надбавка за стаж - 0%");
@@ -72,6 +70,14 @@ function experience (){
         alert("Надбавка за стаж - 10%");
     } else if (exp >=10 && exp < 20) {
         alert("Надбавка за стаж - 20%");
+    } else {
+        alert ("Помилка! Повторіть введення.");
     }
 }
 //Задача 6
+document.getElementById("but").onclick = function (){
+    for (var i = 4; i <= 200; i++ ) {
+        document.write(i + " ");
+    }
+}
+//Задача 7

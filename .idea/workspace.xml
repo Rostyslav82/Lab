@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2d7ccc3-916d-4972-b154-53a5fd37bdaa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/funMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/funMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/menu.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/menu.less" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/menu.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/formSubmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/formSubmit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/study1805.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/study1805.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/study1805.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/study1805.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="study1805.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascript/study1805.html">
+      <file leaf-file-name="index25-05.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/index25-05.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="1540">
+              <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study1805.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/study1805.js">
+      <file leaf-file-name="study25-05.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/study25-05.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+            <state relative-caret-position="551">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -51,6 +46,7 @@
         <option value="Less File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="package_json" />
       </list>
     </option>
   </component>
@@ -60,9 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lab1.3.4.1.html" />
-        <option value="$PROJECT_DIR$/lab1.3.4.2.html" />
-        <option value="$PROJECT_DIR$/lab1.3.5.html" />
         <option value="$PROJECT_DIR$/Style1.3.5.css" />
         <option value="$PROJECT_DIR$/test.css" />
         <option value="$PROJECT_DIR$/test.html" />
@@ -108,9 +101,12 @@
         <option value="$PROJECT_DIR$/javascript/menu.less" />
         <option value="$PROJECT_DIR$/javascript/menu.js" />
         <option value="$PROJECT_DIR$/javascript/formSubmit.html" />
-        <option value="$PROJECT_DIR$/javascript/formSubmit.js" />
         <option value="$PROJECT_DIR$/javascript/study1805.html" />
         <option value="$PROJECT_DIR$/javascript/study1805.js" />
+        <option value="$PROJECT_DIR$/javascript/package.json" />
+        <option value="$PROJECT_DIR$/javascript/formSubmit.js" />
+        <option value="$PROJECT_DIR$/javascript/index25-05.html" />
+        <option value="$PROJECT_DIR$/javascript/study25-05.js" />
       </list>
     </option>
   </component>
@@ -123,11 +119,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
-    <option name="height" value="860" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -137,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,18 +146,22 @@
               <item name="LAB" type="462c0819:PsiDirectoryNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LAB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LAB" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="pauseTime&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -282,12 +283,21 @@
       <workItem from="1526840193739" duration="594000" />
       <workItem from="1527181094002" duration="5696000" />
       <workItem from="1527226914238" duration="20000" />
-      <workItem from="1527226968060" duration="598000" />
+      <workItem from="1527226968060" duration="7572000" />
+      <workItem from="1527262341913" duration="3517000" />
+      <workItem from="1527437387633" duration="3202000" />
+      <workItem from="1527491978966" duration="13493000" />
+      <workItem from="1527598898948" duration="90000" />
+      <workItem from="1527599017552" duration="18000" />
+      <workItem from="1527599089373" duration="3660000" />
+      <workItem from="1527618057196" duration="1259000" />
+      <workItem from="1527660929051" duration="19193000" />
+      <workItem from="1527693898515" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378933000" />
+    <option name="totallyTimeSpent" value="430348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,10 +309,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12737642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10963245" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882273" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -324,19 +333,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12737642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882273" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882273" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32746956" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3788904" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882273" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -347,26 +356,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/study1805.js">
+    <entry file="file://$PROJECT_DIR$/javascript/study25-05.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="75" column="1" lean-forward="true" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/trac_msi.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab1.3.3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="3" column="54" lean-forward="true" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/Style1.3.5.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -566,24 +562,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/funMenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/formSubmit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -601,24 +583,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/formSubmit.js">
+    <entry file="file://$PROJECT_DIR$/javascript/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="20">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/study1805.js">
+    <entry file="file://$PROJECT_DIR$/javascript/funMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/formSubmit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/formSubmit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/study1805.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="674">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/study1805.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="79" column="32" lean-forward="true" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/index25-05.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/study25-05.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
