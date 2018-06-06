@@ -145,13 +145,15 @@
 <div class="modalReg">
     <form action="" method="" id="id01">
         <span class="close" onclick="closeBtn()">&times;</span>
-        <input placeholder="Name" name="name" id="name"><br>
-        <p class="errorNote" id ="errorName"></p>
+        <input placeholder="Name" name="name" id="name"><br><br>
         <input placeholder="Surname" name="surname" id="s-name"><br><br>
         <input placeholder="Password" type="password" name="password" id="password"><br><br>
         <input placeholder="Repeat Password" type="password" name="repPassword" id="repPassword"><br><br>
         <input placeholder="E-mail" name="mail" id="mail"><br><br>
         <input type="checkbox">    Remember Me<br><br><br>
+        <p class="errorNote" id ="errorName"></p>
+        <p class="errorNote" id ="errorSurName"></p>
+        <p class="errorNote" id ="errorMail"></p>
         <input type="button" class="formButton" value="Sign in" onclick="validate()">
     </form>
 </div>
@@ -161,6 +163,8 @@
         <input placeholder="E-mail" name="mail" id="mailEnter"><br><br>
         <input placeholder="Password" type="password" name="password" id="passwordEnter"><br><br>
         <input type="checkbox">  Remember Me<br><br><br>
+        <p class="errorNote" id ="errorMailEnter"></p>
+        <p class="errorNote" id ="errorPassEnter"></p>
         <input type="button" class="formButton" value="Log in" onclick="validationEnter()">
     </form>
 </div>

@@ -49,14 +49,14 @@ function validate(){
     var repPass = document.getElementById("repPassword").value;
 
 
-    if(regName.test(name) == false) {
+    if(regName.test(name) == false || name.length < 2){
         document.getElementById("name").className = "error";
         document.getElementById("errorName").innerHTML = "Bad name. Please try again.";
     }else if (regSname.test(surname) == false){
-        fail = "Перевірте правильність введених даних в полі: фамілія";
+        document.getElementById("errorSurName").innerHTML = "Bad surname. Please try again.";
         document.getElementById("s-name").className = "error";
     }else if (regMail.test(mail) == false){
-        fail = "Перевірте правильність введених даних в полі: мейл";
+        document.getElementById("errorMail").innerHTML = "Bad e-mail. Please try again.";
         document.getElementById("mail").className = "error";
     }else if (regPass.test(pass) == false) {
         fail = "Перевірте правильність введених даних в полі: пароль";
@@ -104,52 +104,40 @@ function getData() {
     document.getElementById("SurnameDataText").innerHTML = "SURNAME USER:  " + inputValueSurname;
     document.getElementById("MailDataText").innerHTML = "E-MAIL USER:  " + inputValueMail;
     document.getElementById("PassDataText").innerHTML = "PASSWORD USER:  " + inputValuePass;
-
-    //var pName = document.createElement('p');
-    //var textName = document.createTextNode(inputValueName);
-    //pName.appendChild(textName);
-    // document.getElementById('list').appendChild(pName);
-
-    // var pSurname = document.createElement('p');
-    // var inputValueSurname = parsedData.userSurname;
-    // var textSurname = document.createTextNode(inputValueSurname);
-    // pSurname.appendChild(textSurname);
-    // document.getElementById('list').appendChild(pSurname);
-
-    // var pMail = document.createElement('p');
-    // var inputValueMail = parsedData.userMail;
-    // var textMail = document.createTextNode(inputValueMail);
-    // pMail.appendChild(textMail);
-    // document.getElementById('list').appendChild(pMail);
-
-    // var pPass = document.createElement('p');
-    // var inputValuePass = parsedData.userPass;
-    // var textPass = document.createTextNode(inputValuePass);
-    // pPass.appendChild(textPass);
-    // document.getElementById('list').appendChild(pPass);
 }
 //Validation for registered users.
 function validationEnter() {
     var mail = document.getElementById("mailEnter").value;
     var pass = document.getElementById("passwordEnter").value;
     var user = JSON.parse(localStorage.getItem("data")).userName;
-
+if (mail =="" || pass =="") {
+    document.getElementById("mailEnter").className = "error";
+    document.getElementById("passwordEnter").className = "error";
+    document.getElementById("errorMailEnter").innerHTML = "Bad mail or pass. Please try again.";
+} else if (mail.length > 2){
+    document.getElementById("mailEnter").className = "";
+    document.getElementById("passwordEnter").className = "error";
+    document.getElementById("errorMailEnter").innerHTML = "Bad pass. Please try again.";
+}
     if (mail == JSON.parse(localStorage.getItem("data")).userMail && pass == JSON.parse(localStorage.getItem("data")).userPass) {
         document.getElementById("userNameNav").innerHTML = "Welcome  " + user + "  !";
-        //document.getElementById("regButtonNav").disabled = true;
-        //document.getElementById("logButtonNav").disabled = true;
-        //document.getElementById("regButtonNav").className = "dis";
-        //document.getElementById("logButtonNav").className = "dis";
         document.getElementById("logButtonNav").style.display = "none";
         document.getElementById("regButtonNav").style.display = "none";
         document.getElementById("logOutButtonNav").style.display = "block";
         document.getElementById("mailEnter").value = "";
         document.getElementById("passwordEnter").value = "";
+        document.getElementById("passwordEnter").className = "";
+        document.getElementById("errorMailEnter").innerHTML = "";
     } else {
-        alert("Користувач не існує.");
+        if (mail.length > 2){
+            document.getElementById("mailEnter").className = "";
+        } else if (pass ==""){
+            document.getElementById("passwordEnter").className = "error";
+        }
     }
     closeWin();
 }
+//Log out user.
 function logOutWin() {
     document.getElementById("userNameNav").innerHTML = "";
     document.getElementById("logButtonNav").style.display = "block";

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front page</title>
+    <style>
+        body{
+            display: block;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+            overflow-y: visible;
+        }
+        .header-block {
+            background: url("img/header-img.jpg") no-repeat center top;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 700px;
+            margin-top: 0px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            height: 60px;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            height: 638px;
+        }
+        .Modal_left{
+             background:#51b2ff;;
+             width: 554px;
+             opacity: 0.5;
+            transition: width 4s;
+         }
+        .Modal_right{
+             background:#303036;
+             width: 554px;
+             opacity: 0.5;
+            transition: width 4s;
+         }
+        .textModal{
+            transition: font-size 4s;
+        }
+        .textModal1{
+            transition: width 4s;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 19px;
+            font-family: "Agency FB";
+        }
+        ul{
+            padding-left:0px;
+        }
+        li {
+            display: inline-block;
+            padding: 0 8px;
+        }
+        button{
+            height: 30px;
+            width: 70px;
+            border-radius: 20%;
+        }
+        h1,h2,hr{
+            color: white;
+            margin-left: 80px;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family:sans-serif ;
+        }
+        h1{
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<header class="header-block">
+    <div class="container">
+        <div class="menu">
+            <div class="menu-logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="menu-nav">
+                <ul>
+                    <li><a class="animation" href="#">Home</a></li>
+                    <li><a class="animation" href="#">Works</a></li>
+                    <li><a class="animation" href="#">Industries</a></li>
+                    <li><a class="animation" href="#">Services</a></li>
+                    <li><a class="animation" href="#">News</a></li>
+                    <li><button id="myBut">OPEN</button></li>
+                    <li><a class="animation" href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div id="modal1" class="Modal_left">
+
+            </div>
+            <div id="modal2" class="Modal_right">
+                <div>
+                    <h1 id="textModal" class="textModal">Lorem</h1>
+                    <h2 id="textModal1" class="textModal">Ipsum Dolor Sit Amet.</h2>
+                    <hr id="textModal2" class="textModal1"size="5" width="70" color="yellow">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</header>
+<script type="text/javascript" src="modal_enter.js"></script>
+</body>
+</html>
