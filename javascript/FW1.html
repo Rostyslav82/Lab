@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        @media (min-width: 500px){
+            .container-1{
+                display:flex;
+                align-items: stretch;
+                flex-direction: row;
+                justify-content: center;
+                border: 2px solid red;
+            }
+        }
+        .container-2{
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 2px solid red;
+        }
+        .container-1 div, .container-2 div{
+            padding: 10px;
+            border: 2px solid green;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+        @media (min-width: 500px){
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        }
+        .nav li{
+            display: flex;
+            padding-left: 15px;
+            border: 2px solid yellow;
+            text-align: center;
+
+          }
+        .nav a{
+            text-align: center;
+          }
+        .list{
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            text-align: center;
+        }
+        .menu{
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container-1">
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+    <div class="nav">
+        <div class="menu">
+            <ul class="list">
+                <li><a>test</a></li>
+                <li><a>test</a></li>
+                <li><a>test</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+</div>
+<div class="container-1">
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+</div>
+<div class="container-2">
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+    <div class="box">
+        <h3></h3>
+        <p></p>
+    </div>
+</div>
+</body>
+</html>

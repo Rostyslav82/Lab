@@ -9,7 +9,7 @@ var myFoto1 = document.getElementById("butPic-1");
 var myFoto2 = document.getElementById("butPic-2");
 var myFoto3 = document.getElementById("butPic-3");
 var myFoto4 = document.getElementById("butPic-4");
-document.getElementById("butPic-1").style.background = "#50C1E9";
+        document.getElementById("butPic-1").style.background = "#50C1E9";
 //Functions Carousel menu.
 //one photo.
 function func1 (){
@@ -102,7 +102,7 @@ function func5 (){
             break;
         }
         if (myArr[3] === "block"){
-            break;
+            myArr[0] = "block";
         }
     }
 }
@@ -115,7 +115,6 @@ function func6 (){
         if (myArr[i] === "block"){
             myArr[i] = "";
             myArr[i-1] = "block";
-            console.log(myArr);
             document.getElementById("pic-1").style.display = myArr[0];
             document.getElementById("pic-2").style.display = myArr[1];
             document.getElementById("pic-3").style.display = myArr[2];
@@ -126,8 +125,10 @@ function func6 (){
     }
 }
 //background-image: url
-//event
+
 //Interval
-const myVar = setInterval(func5 ,2500);
+var myVar = setInterval(func5 ,3000);
 myVar();
+
+
 

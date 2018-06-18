@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage Test</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<input type="text" id="name">Name<br><br>
+<input type="text" id="mail">Mail<br><br>
+<input type="password" id="password">Pass<br><br>
+<input value="SETDATA" type="button" onclick="setData()"><br><br>
+<input value="GETDATA" type="button" onclick="getData()">
+<script>
+//Put entered user data in localStorage.
+    var setData = function (){
+        console.log ("Відправка даних на сервер...");
+        var name = document.getElementById("name").value;
+        var mail = document.getElementById("mail").value;
+        var pass = document.getElementById("password").value;
+        var data = {userName: name, userMail: mail, userPass: pass};
+        console.log(data);
+        var stringData = JSON.stringify(data);
+        localStorage.setItem("data", stringData);
+        console.log(stringData);
+    }
+//Create <p> teg and put text with localStorage.
+   var getData =  function () {
+        var parsedData = JSON.parse(localStorage.getItem("data"));
+        var inputValueName = parsedData.userName;
+        var inputValueMail = parsedData.userMail;
+        var inputValuePass = parsedData.userPass;
+        console.log(inputValueName);
+        console.log(inputValueMail);
+        console.log(inputValuePass);
+    }
+</script>
+</body>
+</html>

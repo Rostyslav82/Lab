@@ -2,178 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            font-size:12px;
-            font-family:sans-serif;
-        }
-        p {
-            color: #1F6ED4;
-            font-size:20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 15px;
-
-        }
-        .errorNote{
-            color: red;
-            font-size:10px;
-        }
-        button {
-            cursor: pointer;
-            width: 150px;
-            height: 25px;
-            background: gainsboro;
-            color: #1F6ED4;
-            border: 1px solid #1F6ED4;
-            font-size:14px;
-            margin-left: 15px;
-        }
-        button:hover {
-            background: #1F6ED4;
-            color: white;
-            border: 0px;
-        }
-        .butData{
-            width: 80px;
-        }
-        .regButton {
-            background: #00a03e;
-            color: white;
-            border: 0px;
-        }
-        .regButton:hover {
-            background: gainsboro;
-            color: white;
-            border: 1px solid #1F6ED4;
-        }
-        .dis{
-            background: grey;
-            color: black;
-            border: 0px solid black;
-        }
-        .formButton {
-            background: #1F6ED4;
-            color: white;
-            font-size:15px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 150px;
-            height: 25px;
-            border: 1px solid #1F6ED4;
-            margin-left: 15px;
-        }
-        .formButton:hover{
-            background: white;
-            color: #1F6ED4;
-            border: 1px solid #1F6ED4;
-            border-radius: 4px;
-        }
-        .modalReg, .modalEnter {
-            position: absolute;
-            width: 280px;
-            margin-left: -150px;
-            left: 50%;
-            top: -100%;
-            padding: 50px;
-            background: white;
-            border: 0px;
-            z-index: 2;
-            transition: all 0.5s ease-in;
-        }
-        form {
-            margin-left: 50px;
-        }
-        .overflow {
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            background: #B9EDF8;
-            position: absolute;
-            top: 0;
-            opacity: 0.5;
-        }
-        .nav {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            background: gainsboro;
-            height: 60px;
-            padding-right: 15px;
-
-        }
-        .error {
-            border: 1px solid red;
-        }
-        .notError {
-            border: 1px solid green;
-        }
-        #list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 200px;
-        }
-        .close {
-            position: absolute;
-            right: 10px;
-            top: 0;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-    </style>
+    <title>Ui Framework presentation site</title>
+    <link rel="stylesheet"href="style25-05.css">
 </head>
 <body>
+<!--Navigation bar-->
 <div class="nav">
-    <p id="userNameNav"></p>
-    <button id="regButtonNav" class="regButton" onclick="openWin()">Registration</button>
-    <button class="butData" onclick="getData()">User Data</button>
-    <button id="logButtonNav" onclick="openWinEnter()">Log in</button>
-    <button id="logOutButtonNav" onclick="logOutWin()" style="display: none">Log out</button>
+    <div class ="logo">
+        <img  src="img/logo.png" onclick="main()">
+    </div>
+    <div class = "text">
+        <p class = "logoText">Ui FrameworK</p>
+    </div>
+    <div>
+        <p id="userNameNav"></p>
+    </div>
+    <div class="nav_list">
+        <a onclick="about()">About</a>
+        <a onclick="fw()">UiFW</a>
+        <!--<button id="cuntFW" onclick="fw()" class="regButton">Continue FW</button>-->
+        <button id="regButtonNav" class="regButton" onclick="openWin()">SIGN UP</button>
+        <button id="logButtonNav" class="regButton" onclick="openWinEnter()">LOG IN</button>
+        <button id="logOutButtonNav" class="regButton" onclick="logOutWin()" style="display: none">LOG OUT</button>
+    </div>
 </div>
+<!--Modal windows: Registration and Log in/Log out-->
 <div class="modalReg">
     <form action="" method="" id="id01">
-        <span class="close" onclick="closeBtn()">&times;</span>
-        <input placeholder="Name" name="name" id="name"><br><br>
-        <input placeholder="Surname" name="surname" id="s-name"><br><br>
-        <input placeholder="Password" type="password" name="password" id="password"><br><br>
-        <input placeholder="Repeat Password" type="password" name="repPassword" id="repPassword"><br><br>
-        <input placeholder="E-mail" name="mail" id="mail"><br><br>
-        <input type="checkbox">    Remember Me<br><br><br>
+        <p class="info">Already have an account?  <button id="logButtonNav" class="regButton info-button" onclick="changeLog()">LOG IN</button></p>
+        <span class="close" onclick="closeFormWin()">&times;</span>
+        <lable>Nickname</lable><br>
+        <input name="name" id="name"><br><br>
+        <lable>Password</lable><br>
+        <input type="password" name="password" id="password"><br><br>
+        <lable>Password confirmation</lable><br>
+        <input type="password" name="repPassword" id="repPassword"><br><br>
+        <lable>Email</lable><br>
+        <input name="mail" id="mail"><br><br><br><br>
         <p class="errorNote" id ="errorName"></p>
-        <p class="errorNote" id ="errorSurName"></p>
+        <p class="errorNote" id ="errorPass"></p>
         <p class="errorNote" id ="errorMail"></p>
-        <input type="button" class="formButton" value="Sign in" onclick="validate()">
+        <input type="button" class="formButton" value="CREATE ACCOUNT" onclick="validate()">
     </form>
 </div>
 <div class="modalEnter">
     <form id="id02">
-        <span class="close" onclick="closeWin()">&times;</span>
-        <input placeholder="E-mail" name="mail" id="mailEnter"><br><br>
-        <input placeholder="Password" type="password" name="password" id="passwordEnter"><br><br>
-        <input type="checkbox">  Remember Me<br><br><br>
+        <span class="close" onclick="closeFormWin()">&times;</span>
+        <p class="info">Don't have an account? <button id="regButtonNav" class="regButton info-button" onclick="openWin()">SIGN UP</button></p>
+        <lable>Email</lable><br>
+        <input name="mail" id="mailEnter"><br><br>
+        <lable>Password</lable><br>
+        <input type="password" name="password" id="passwordEnter"><br><br><br>
         <p class="errorNote" id ="errorMailEnter"></p>
-        <p class="errorNote" id ="errorPassEnter"></p>
-        <input type="button" class="formButton" value="Log in" onclick="validationEnter()">
+        <p class="errorNote" id ="errorPassEnter"></p><br>
+        <input type="button" class="formButton" value="LOG IN" onclick="validationEnter()">
     </form>
 </div>
-<div id="list">
-    <p id="userDataText"></p>
-    <p id="SurnameDataText"></p>
-    <p id="MailDataText"></p>
-    <p id="PassDataText"></p>
+<!--Info Menu - Log in - user data-->
+    <div id="menu">
+        <div class="con1">
+            <p class="dataUserInfo s1" id="userTextMain"></p><hr>
+            <p class="dataUserInfo" id="userDataText"></p>
+            <p class="dataUserInfo" id="MailDataText"></p>
+            <p class="dataUserInfo" id="PassDataText"></p>
+        </div>
+    </div>
+
+
+<!--main container-->
+<div id="main" class="main-container">1</div>
+<!--FW-->
+<div id="fw" class="fw-container" style="display: none">FW</div>
+<!--about-->
+<div id="about" class="about-container" style="display: none">
+    <div id="container" class="container">
+        <div type="text" class="aboutCode">
+            <h1>PROJECT NAME: Ui Framework presentation site</h1>
+            <p class="aboutText">General Description:
+                Сайт повинен складатись мінімум з трьох сторінок: реєстрації,  логінізації та основної сторінки.
+                Сайт розроблений для презентації власного UI Framework.
+                Основне завдання -  ознайомити користувачів з усіма можливостями вашого фреймворку.
+            </p>
+            <p class="aboutText">Requirements:</p>
+            <ol>
+                <li>Сторінка реєстрації.</li>
+                <li>Логін сторінка.</li>
+                <li>Основна сторінка.</li>
+            </ol>
+            <p class="aboutText"> 1. Поля для вводу паролю та емейлу повинні валідуватися. Після
+                успішної реєстрації дані про користувача зберігаються в Local Storage.<br>
+            <p class="aboutText">2. Логінізація відбувається лише за умови наявності такого користувача в Local Storage.</p>
+            <p class="aboutText">3. На основній сторінці відображається весь функціоналвшого фреймворку, мінімальний набір: модальне вікно, панелі, головні контейнери, кнопки, таблиця.</p>
+            <p class="aboutText">Корстувач може копіювати код наведений у прикладі на вашому сайті.</p>
+            <p class="aboutText s1">Технології написання проекту необмежені. </p>
+        </div>
+    </div>
 </div>
+<!--footer - info - menu-->
+<footer>
+    <div></div>
+    <div></div>
+    <div></div>
+</footer>
 <script type="text/javascript" src="study25-05.js"></script>
 </body>
 </html>

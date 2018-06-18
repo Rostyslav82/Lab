@@ -10,6 +10,8 @@ btn.onclick =  function (){
     tmodal2.style.width = "0px"
     lmodal.style.width = "0px";
     rmodal.style.width = "0px";
-
+    setTimeout(welcome, 4500);
 }
-
+var welcome = function frontText(){
+document.getElementById("frontText").style.display = "block";
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+    <style>
+        #slider {
+            position: relative;
+            overflow: hidden;
+            width: 800px;
+            height: 520px;
+            margin: 20px auto;
+            padding: 0;
+            list-style: none;
+        }
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease-in 0.1s;
+            left:0;}
+        .slide img {
+            width: 100%;}
+        .arrows {
+            position: relative;
+            margin: 0 auto;
+            width: 600px;
+        }
+        .arrow {
+            position: absolute; cursor: pointer;
+        }
+        .no_active {
+            color: red;
+        }
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul id="slider">
+        <li class="slide active">
+            <img src="https://images.unsplash.com/photo-1522198734915-76c764a8454d?ixlib=rb-0.3.5&s=7ea3f6b701fd72647125869532aeb049&auto=format&fit=crop&w=1050&q=80">
+        </li>
+        <li class="slide">
+            <img src="https://images.unsplash.com/photo-1522198428577-adf2d374b05b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8c7a9980900ca8adf70b1d9ad7487a4&auto=format&fit=crop&w=1050&q=80">
+        </li>
+        <li class="slide">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e23e6404f851a9c272479500cfac3dd5&auto=format&fit=crop&w=1050&q=80">
+        </li>
+        <li class="slide">
+            <img src="https://images.unsplash.com/photo-1491308056676-205b7c9a7dc1?ixlib=rb-0.3.5&s=a7ba2b97ad1e4f79b142c0f329821596&auto=format&fit=crop&w=1053&q=80">
+        </li>
+    </ul>
+</div>
+<div class="arrows">
+    <span class="arrow next" id="next"onclick="next()">NEXT</span>
+    <span class="arrow prew" id="prew"onclick="prew()">PREW</span>
+</div>
+<script>
+
+    var slides = document.getElementsByClassName('slide');
+    for(var i=0; i< slides.length; i++){
+    slides[i].style.zIndex = slides.length - i;
+    }
+function next(){
+    var activeEl = document.querySelector('.active');
+    if(activeEl.nextElementSibling) {
+        activeEl.style.left = "-100%";
+        activeEl.classList.remove('active');
+        activeEl.nextElementSibling.classList.add('active');
+        this.classList.remove('no_active');
+        prew.classList.remove('no_active');
+        if(!activeEl.nextElementSibling.nextElementSibling) {
+            this.classList.add('no_active');
+        }
+    }
+}
+    function prew(){
+        var activeEl = document.querySelector('.active');
+        if(activeEl.previousElementSibling) {
+            activeEl.previousElementSibling.style.left = "0%";
+            activeEl.classList.remove('active');
+            activeEl.previousElementSibling.classList.add('active');
+            this.classList.remove('no_active');
+            next.classList.remove('no_active');
+            if(!activeEl.previousElementSibling.previousElementSibling) {
+                this.classList.add('no_active');
+            }
+        }
+    }
+    var myVar = setInterval(next ,3000);
+    myVar();
+</script>
+</body>
+</html>

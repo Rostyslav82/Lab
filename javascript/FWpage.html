@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display:flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            /*border: 2px solid red;*/
+            /*height: 300px;*/
+        }
+        .box{
+            padding: 10px;
+            /*border: 2px solid green;*/
+            height: 100px;
+            width: 400px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .test-button{
+            background: none;
+            border: 1px solid black;
+            color: black;
+            font-size:15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+            height: 35px;
+            transition: all 0.5s ease-in;
+        }
+        /*.test-button:hover{*/
+             /*background: green;*/
+             /*color: white;*/
+             /*border-radius: 5px;*/
+             /*border: 0px;*/
+             /*width: 180px;*/
+             /*transition: all 0.5s ease-in;*/
+         /*}*/
+        .click-button{
+            background: green;
+            border: 0px;
+            color: white;
+            font-size:15px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: all 0.4s ease-in;
+        }
+        .click-button2{
+            background: green;
+            border: 0px;
+            color: white;
+            font-size:15px;
+            cursor: pointer;
+            width: 120px;
+            height: 35px;
+            transition: all 0.3s ease-in;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 10px 0 grey;
+        }
+        .click-button3{
+            width: 200px;
+            padding-right: 80px;
+            background: none;
+            border: 1px solid black;
+            color: black;
+            font-size:15px;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 35px;
+            transition: all 0.5s ease-in;
+        }
+
+        .button {
+            font-family: 'Roboto Condensed', sans-serif;
+
+            background: none;
+            width: 120px;
+            height: 35px;
+            border-radius: 5px;
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            text-transform: uppercase;
+            line-height: 40px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        .button p {
+            margin: 0;
+            position: relative;
+            transition: all ease 1s;
+        }
+        .shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 0;
+            background: #205081;
+            overflow:hidden;
+            transition: all ease 2s;
+            border-radius: 5px;
+        }
+        .shadow span {
+            opacity:0;
+            transition: all ease 3s;
+        }
+        .button:hover .shadow {
+            width: 100%;
+        }
+        .button:hover p {
+            opacity: 0;
+        }
+        .button:hover .shadow span {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<h1>TEST</h1>
+<div class="container">
+    <div class="box">
+        <button id="b1" class="test-button" onclick="myfun()">CLICK ME</button>
+
+    </div>
+    <div class="box">
+        <button id="b2" class="test-button" onclick="myfun1()">CLICK ME</button>
+    </div>
+    <div class="box">
+        <input id="b3" type="button" id="b3" class="test-button" onclick="myfun2()" value="CLICK ME">
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <h3>This bottom ...</h3>
+    </div>
+    <div class="box">
+        <h3>This bottom ...</h3>
+    </div>
+    <div class="box">
+        <h3>This bottom ...</h3>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+        <div class="button">
+            <p>CLICK ME</p>
+            <div class="shadow">
+                <span>PLEASE</span>
+            </div>
+        </div>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+</div>
+
+<script>
+function myfun() {
+    var but = document.getElementById("b1").className;
+    if (but == "test-button") {
+        document.getElementById("b1").className = "click-button";
+    } else {
+        document.getElementById("b1").className = "test-button";
+    }
+}
+function myfun1() {
+    var but = document.getElementById("b2").className;
+    if (but == "test-button") {
+        document.getElementById("b2").className = "click-button2";
+    } else {
+        document.getElementById("b2").className = "test-button";
+    }
+}
+function myfun2() {
+    var but = document.getElementById("b3").className;
+    if (but == "test-button") {
+        document.getElementById("b3").className = "click-button3";
+        document.getElementById("b3").value = "TEST";
+    } else {
+        document.getElementById("b3").className = "test-button";
+        document.getElementById("b3").value = "CLICK ME";
+    }
+}
+</script>
+</body>
+</html>
